@@ -115,6 +115,6 @@ Para que el entregable no contenga números inventados:
 4. `results/informe.md` se regenera con las métricas reales y la sección
    «EJECUCION INCOMPLETA» desaparece automáticamente.
 
-> **Nota de seguridad:** las API keys facilitadas por chat han quedado expuestas en
+> **Nota de seguridad:** las API keys facilitadas por cualquier medio quedan expuestas en
 > el historial. Deben revocarse y regenerarse. Este repositorio no las contiene:
 > `.env` está en `.gitignore`.
