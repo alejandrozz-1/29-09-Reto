@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "descripcion": "Ground truth (respuestas de referencia) para evaluar la precision de Gemini sobre data/textos.json. Las entidades se anotan con su miniscula/acentos originales; la evaluacion normaliza antes de comparar.",
+    "criterios": {
+      "idioma": "codigo ISO 639-1 esperado",
+      "entidades": "conjunto de nombres propios relevantes (PERSON, ORG, LOC, DATE, MONEY, PRODUCT, EVENT, CONTACT). No es exhaustivo: se evalua sobre este conjunto (recall) mas el numero de entidades inventadas (precision proxy).",
+      "sentimiento": "etiqueta positivo|neutral|negativo y puntuacion en rango [-1, 1]",
+      "resumen": "resumen de referencia de una frase usado para calcular solapamiento (ROUGE-L approx)"
+    }
+  },
+  "esperado": {
+    "t01": {
+      "idioma": "es",
+      "entidades": ["Real Madrid", "Santiago Bernabéu", "FC Barcelona", "LaLiga", "Vinícius Júnior", "Jude Bellingham", "Atlético de Madrid", "8 de noviembre"],
+      "sentimiento": { "etiqueta": "positivo", "score": 0.7 },
+      "resumen": "El Real Madrid goleó 3-1 al FC Barcelona en el clásico y se coloca líder de LaLiga con 24 puntos."
+    },
+    "t02": {
+      "idioma": "en",
+      "entidades": ["NASA", "Artemis III", "Kennedy Space Center", "Florida", "September 2026", "Bill Nelson", "SpaceX", "4.5 billion dollars"],
+      "sentimiento": { "etiqueta": "positivo", "score": 0.2 },
+      "resumen": "NASA confirmed the Artemis III mission will launch no earlier than September 2026, carrying the first woman and first person of colour to the Moon."
+    },
+    "t03": {
+      "idioma": "es",
+      "entidades": ["NovaSound Pro", "129 euros", "marzo", "NovaSound", "15 de abril"],
+      "sentimiento": { "etiqueta": "negativo", "score": -0.9 },
+      "resumen": "Los auriculares NovaSound Pro tienen batería corta, desconexiones de Bluetooth y un soporte técnico que no responde."
+    },
+    "t04": {
+      "idioma": "en",
+      "entidades": ["Focusly", "six months", "Brightline Media", "Slack", "Google Calendar", "12 dollars"],
+      "sentimiento": { "etiqueta": "positivo", "score": 0.85 },
+      "resumen": "Focusly improved sprint planning at Brightline Media with a clean interface, fast Kanban boards and responsive support."
+    },
+    "t05": {
+      "idioma": "es",
+      "entidades": ["Marta", "24 de julio", "sala Sevilla", "Madrid", "Ana Rodríguez", "Carlos Mendoza"],
+      "sentimiento": { "etiqueta": "neutral", "score": 0.0 },
+      "resumen": "Carlos Mendoza confirma a Marta la reunión de planificación del tercer trimestre el jueves 24 de julio a las 10:00 en la sala Sevilla de Madrid."
+    },
+    "t06": {
+      "idioma": "en",
+      "entidades": ["Daniel", "INV-2291", "8,750 USD", "3 May", "2 June", "27 June", "Priya Nair", "Northgate Supply Ltd"],
+      "sentimiento": { "etiqueta": "negativo", "score": -0.4 },
+      "resumen": "Northgate Supply requests payment of overdue invoice INV-2291 for 8,750 USD by 27 June or a payment plan, warning of late fees."
+    },
+    "t07": {
+      "idioma": "fr",
+      "entidades": ["SNCF", "25 milliards d'euros", "2030", "Clémentine Delacroix", "400", "Île-de-France"],
+      "sentimiento": { "etiqueta": "positivo", "score": 0.4 },
+      "resumen": "Le gouvernement français portera le budget de la SNCF à 25 milliards d'euros d'ici 2030 pour financer 400 nouvelles rames."
+    },
+    "t08": {
+      "idioma": "pt",
+      "entidades": ["Cantina do Zé", "Porto", "50 minutos", "78 euros", "Bruno"],
+      "sentimiento": { "etiqueta": "negativo", "score": -0.7 },
+      "resumen": "A experiência no Cantina do Zé foi medíocre pela espera, prato seco e preço de 78 euros, apesar do ambiente acolhedor."
+    },
+    "t09": {
+      "idioma": "de",
+      "entidades": ["Frau Schneider", "Alpha", "12. Oktober", "Weber", "30. Oktober", "Lukas Brandt", "Hansen & Söhne"],
+      "sentimiento": { "etiqueta": "neutral", "score": 0.1 },
+      "resumen": "Lukas Brandt bestätigt Frau Schneider den Abschluss von Meilenstein 3 des Projekts Alpha am 12. Oktober und die Ubergabe am 30. Oktober."
+    },
+    "t10": {
+      "idioma": "it",
+      "entidades": ["Milano", "Elena Ferretti", "120 chilometri", "2028", "300 milioni di euro", "M5"],
+      "sentimiento": { "etiqueta": "positivo", "score": 0.5 },
+      "resumen": "Milano approva 120 km di piste ciclabili entro il 2028 e 50 nuove stazioni della M5, finanziati con 300 milioni di euro."
+    }
+  }
+}

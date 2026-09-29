@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "fecha": "2026-09-29T07:49:10+00:00",
+    "modelo": "gemini-flash-latest",
+    "tareas": [
+      "ocr",
+      "descripcion",
+      "escena",
+      "objetos"
+    ],
+    "n_imagenes": 5,
+    "directorio": "images/"
+  },
+  "imagenes": [
+    {
+      "archivo": "01_documento_escaneado.png",
+      "predicciones": {
+        "ocr": {
+          "ok": false,
+          "error": "403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}"
+        }
+      }
+    }
+  ],
+  "error": {
+    "tipo": "ApiError",
+    "mensaje": "403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}",
+    "tarea": "ocr",
+    "imagen": "01_documento_escaneado.png"
+  }
+}

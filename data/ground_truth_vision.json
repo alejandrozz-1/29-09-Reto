@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "descripcion": "Ground truth de las 5 imagenes generadas por scripts/generate_test_images.py",
+    "criterios": {
+      "ocr": "similitud de caracteres normalizada (SequenceMatcher) sobre el texto esperado",
+      "escena": "match exacto de la etiqueta de escena",
+      "objetos": "precision/recall/F1 sobre el conjunto de objetos esperados",
+      "descripcion": "recall de palabras clave esperadas en la descripcion"
+    }
+  },
+  "imagenes": {
+    "01_documento_escaneado.png": {
+      "tipo_tarea": "ocr",
+      "escena_esperada": "documento_escaneado",
+      "ocr_esperado": "ACTA DE REUNION\nFecha: 14 de marzo de 2026\nLugar: Sala de Juntas, Edificio Norte\nEl Comite de Direccion se reunio el 14 de marzo de 2026 para\naprobar el plan de inversion del segundo trimestre. Se aprobo\nun presupuesto de 1.250.000 euros para la modernizacion del\ncentro de datos de Madrid, asi como la contratacion de doce\nnuevos ingenieros antes del 30 de junio de 2026.\nSe deja constancia de que la directora financiera, Laura\nGomez, presento el informe de resultados del ejercicio 2025,\ncon un crecimiento del 18 por ciento sobre el ano anterior.\nLa proxima reunion quedo fijada para el 12 de abril de 2026.\nFdo. Laura Gomez - Direccion Financiera",
+      "objetos_esperados": [
+        "documento",
+        "texto",
+        "titulo",
+        "firma",
+        "pagina blanca",
+        "borde"
+      ],
+      "descripcion_keywords": [
+        "documento",
+        "acta",
+        "reunion",
+        "texto",
+        "firma",
+        "blanco"
+      ]
+    },
+    "02_recibo_factura.png": {
+      "tipo_tarea": "ocr",
+      "escena_esperada": "recibo_factura",
+      "ocr_esperado": "SUPERMERCADO EL SOL\nCalle Mayor 22, Madrid\nNIF: B-87654321\n--------------------------------\nFecha: 05/07/2026   18:42\nCaja 04   Ticket 001293\n--------------------------------\n3  LECHE ENTERA 2L      4,05\n1  PAN CRUJIENTE        1,85\n2  MANZANA GALA 1KG     3,10\n1  CAFE MOLIDO 250G     4,60\n1  DETERGENTE 3L        7,95\n--------------------------------\nSUBTOTAL                21,55\nIVA 10%                  2,16\nTOTAL                   23,71\n--------------------------------\nTARJETA **** 4471       23,71\nGRACIAS POR SU COMPRA",
+      "objetos_esperados": [
+        "recibo",
+        "ticket",
+        "texto",
+        "codigo de barras",
+        "total",
+        "productos"
+      ],
+      "descripcion_keywords": [
+        "recibo",
+        "ticket",
+        "compra",
+        "total",
+        "barras",
+        "supermercado"
+      ]
+    },
+    "03_foto_urbana.png": {
+      "tipo_tarea": "escena_objetos",
+      "escena_esperada": "escena_urbana",
+      "ocr_esperado": "AVENIDA DEL SOL",
+      "objetos_esperados": [
+        "edificio",
+        "coche",
+        "árbol",
+        "semáforo",
+        "farola",
+        "carretera",
+        "cielo",
+        "cartel"
+      ],
+      "descripcion_keywords": [
+        "calle",
+        "ciudad",
+        "edificio",
+        "coche",
+        "árbol",
+        "semáforo",
+        "carretera",
+        "cielo",
+        "cartel"
+      ]
+    },
+    "04_producto.png": {
+      "tipo_tarea": "escena_objetos",
+      "escena_esperada": "producto_fondo_blanco",
+      "ocr_esperado": "CAFFE NERO\nMUG 350ml",
+      "objetos_esperados": [
+        "taza",
+        "asa",
+        "etiqueta",
+        "café",
+        "fondo blanco",
+        "sombra"
+      ],
+      "descripcion_keywords": [
+        "taza",
+        "roja",
+        "rojo",
+        "asa",
+        "etiqueta",
+        "blanco",
+        "café",
+        "cafe"
+      ]
+    },
+    "05_paisaje_natural.png": {
+      "tipo_tarea": "escena_objetos",
+      "escena_esperada": "paisaje_natural",
+      "ocr_esperado": "",
+      "objetos_esperados": [
+        "montaña",
+        "lago",
+        "árbol",
+        "cielo",
+        "nube",
+        "sol",
+        "pradera"
+      ],
+      "descripcion_keywords": [
+        "montaña",
+        "montañas",
+        "lago",
+        "agua",
+        "árbol",
+        "árboles",
+        "cielo",
+        "nube",
+        "nubes",
+        "sol",
+        "paisaje"
+      ]
+    }
+  }
+}

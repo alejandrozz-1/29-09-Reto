@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "fecha": "2026-09-29T07:49:09+00:00",
+    "modelo": "gemini-flash-latest",
+    "tareas": [
+      "idioma",
+      "entidades",
+      "sentimiento",
+      "resumen"
+    ],
+    "n_textos": 10,
+    "fuente": "data\\textos.json"
+  },
+  "textos": [
+    {
+      "id": "t01",
+      "tipo": "noticia",
+      "idioma_esperado": "es",
+      "texto": "El Real Madrid conquistó el Santiago Bernabéu con una victoria por 3-1 frente al FC Barcelona en el clásico de LaLiga. Vinícius Júnior abrió el marcador en el minuto 12 y Jude Bellingham selló el triunfo en la segunda parte. El conjunto blanco se coloca líder con 24 puntos, a cuatro del segundo clasificado. El próximo partido será contra el Atlético de Madrid el sábado 8 de noviembre.",
+      "predicciones": {
+        "idioma": {
+          "ok": false,
+          "error": "403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}"
+        }
+      }
+    }
+  ],
+  "error": {
+    "tipo": "ApiError",
+    "mensaje": "403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}",
+    "tarea": "idioma",
+    "texto_id": "t01"
+  }
+}

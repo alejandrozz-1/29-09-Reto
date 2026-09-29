@@ -1,0 +1,70 @@
+{
+  "texto": {
+    "resumen": {
+      "n_textos": 1,
+      "idioma": {
+        "accuracy": null,
+        "evaluados": 0
+      },
+      "entidades": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "evaluados": 0
+      },
+      "sentimiento": {
+        "accuracy": null,
+        "mae_score": null,
+        "evaluados": 0
+      },
+      "resumen": {
+        "rougeL_f1_medio": null,
+        "dentro_40_palabras": null,
+        "evaluados": 0
+      }
+    },
+    "detalle": [
+      {
+        "id": "t01",
+        "tipo": "noticia",
+        "idioma_real": "es",
+        "latencias_s": {}
+      }
+    ]
+  },
+  "vision": {
+    "resumen": {
+      "n_imagenes": 1,
+      "ocr": {
+        "similitud_media": null,
+        "evaluadas": 0
+      },
+      "descripcion": {
+        "keyword_recall_medio": null,
+        "evaluadas": 0
+      },
+      "escena": {
+        "accuracy": null,
+        "evaluadas": 0
+      },
+      "objetos": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "evaluados": 0
+      }
+    },
+    "detalle": [
+      {
+        "archivo": "01_documento_escaneado.png",
+        "tipo_tarea": "ocr"
+      }
+    ]
+  }
+}

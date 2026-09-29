@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "descripcion": "Conjunto de 10 textos de ejemplo (noticias, reseñas y emails) en 6 idiomas para el análisis con la API de Gemini.",
+    "total": 10
+  },
+  "textos": [
+    {
+      "id": "t01",
+      "tipo": "noticia",
+      "idioma_esperado": "es",
+      "texto": "El Real Madrid conquistó el Santiago Bernabéu con una victoria por 3-1 frente al FC Barcelona en el clásico de LaLiga. Vinícius Júnior abrió el marcador en el minuto 12 y Jude Bellingham selló el triunfo en la segunda parte. El conjunto blanco se coloca líder con 24 puntos, a cuatro del segundo clasificado. El próximo partido será contra el Atlético de Madrid el sábado 8 de noviembre."
+    },
+    {
+      "id": "t02",
+      "tipo": "noticia",
+      "idioma_esperado": "en",
+      "texto": "NASA announced on Tuesday that the Artemis III mission will launch from Kennedy Space Center in Florida no earlier than September 2026. The mission will carry the first woman and the first person of colour to the Moon. Bill Nelson, the NASA administrator, said the agency had completed all critical tests of the Space Launch System. SpaceX will provide the lunar lander under a contract worth 4.5 billion dollars."
+    },
+    {
+      "id": "t03",
+      "tipo": "resena",
+      "idioma_esperado": "es",
+      "texto": "Compré auriculares inalámbricos NovaSound Pro por 129 euros en marzo y fue una decepción total. La batería dura menos de tres horas, el Bluetooth se desconecta cada cinco minutos y el soporte técnico de NovaSound nunca contesta los correos. Pedí la devolución el 15 de abril y todavía no me han devuelto el dinero. No lo recomiendo a nadie."
+    },
+    {
+      "id": "t04",
+      "tipo": "resena",
+      "idioma_esperado": "en",
+      "texto": "I have been using the Focusly task manager for six months and it has completely changed how our team at Brightline Media plans its sprints. The interface is clean, the Kanban boards load instantly, and the integrations with Slack and Google Calendar work flawlessly. Support replied in under an hour when I asked about SSO. Worth every penny of the 12 dollars per month."
+    },
+    {
+      "id": "t05",
+      "tipo": "email",
+      "idioma_esperado": "es",
+      "texto": "Asunto: Reunión de planificación trimestral\n\nHola Marta,\n\nTe escribo para confirmar la reunión de planificación del tercer trimestre el jueves 24 de julio a las 10:00 en la sala Sevilla de la oficina de Madrid. Por favor, trae el informe de ventas que preparó el equipo de Ana Rodríguez y la previsión de presupuesto de Q3.\n\nUn saludo,\nCarlos Mendoza\nDepartamento de Operaciones"
+    },
+    {
+      "id": "t06",
+      "tipo": "email",
+      "idioma_esperado": "en",
+      "texto": "Subject: Invoice INV-2291 overdue\n\nHi Daniel,\n\nOur records show that invoice INV-2291 for 8,750 USD, issued on 3 May and due on 2 June, remains unpaid 21 days after the deadline. Please arrange payment by Friday 27 June or contact accounts@northgate-supply.com to agree a payment plan. Late fees of 2% per month will apply thereafter.\n\nRegards,\nPriya Nair\nAccounts Department, Northgate Supply Ltd"
+    },
+    {
+      "id": "t07",
+      "tipo": "noticia",
+      "idioma_esperado": "fr",
+      "texto": "Le gouvernement français a annoncé jeudi que le budget de la SNCF sera porté à 25 milliards d'euros d'ici 2030 pour moderniser les lignes régionales. La ministre des Transports, Clémentine Delacroix, a précisé que 400 nouvelles rames seront commandées. Les syndicats ont accueilli la décision favorablement, mais réclament davantage de personnel sur les trains de banlieue d'Île-de-France."
+    },
+    {
+      "id": "t08",
+      "tipo": "resena",
+      "idioma_esperado": "pt",
+      "texto": "O restaurante Cantina do Zé, no Porto, foi uma experiência medíocre. A espera de 50 minutos pela mesa, o bacalhau seco e a conta de 78 euros não compensam o ambiente acolhedor. O empregado Bruno foi simpático, mas o gerente recusou qualquer desconto. Não voltarei em breve."
+    },
+    {
+      "id": "t09",
+      "tipo": "email",
+      "idioma_esperado": "de",
+      "texto": "Betreff: Projektstatus Alpha - Meilenstein 3\n\nSehr geehrte Frau Schneider,\n\nhiermit bestätige ich, dass Meilenstein 3 des Projekts Alpha am 12. Oktober abgeschlossen wurde. Das Team um Herrn Weber hat die Tests erfolgreich bestanden. Die Übergabe an die Produktionsumgebung ist für den 30. Oktober geplant. Bitte prüfen Sie die Anhänge bis Freitag, dem 20. Oktober.\n\nMit freundlichen Grüßen\nLukas Brandt\nProjektleitung, Firma Hansen & Söhne"
+    },
+    {
+      "id": "t10",
+      "tipo": "noticia",
+      "idioma_esperado": "it",
+      "texto": "Milano sta preparando il nuovo piano urbano per la mobilità: la Giunta guidata dal sindaco Elena Ferretti ha approvato 120 chilometri di piste ciclabili entro il 2028. Il progetto, finanziato con 300 milioni di euro da fondi europei, prevede anche 50 nuove stazioni della metropolitana M5. Le associazioni ambientaliste hanno definito il piano storico."
+    }
+  ]
+}
