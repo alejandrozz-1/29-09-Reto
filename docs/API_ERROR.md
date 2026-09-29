@@ -100,7 +100,7 @@ Para que el entregable no contenga números inventados:
 
 1. Generar una API key nueva en <https://aistudio.google.com/apikey> con una cuenta
    cuyo proyecto **no** esté suspendido (o crear un proyecto nuevo en
-   <https://console.cloud.google.com/> y habilitar *Generative Language API*).
+   <https://console.cloud.google.com/> y habilitar *Generative Language API*). **Se necesita de facturacion**
 2. Pegarla en `.env`:
    ```env
    GEMINI_API_KEY=AIzaSy...
